@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    /* Colors */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --vdarkCyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --transWhite: hsla(0, 0%, 100%, 0.75);
+    --vlightGray: hsl(0, 0%, 95%);
+    /* Fonts */
+    --headline: 'Big Shoulders Display', cursive;
+    --subFont: 'Lexend Deca', sans-serif;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--vlightGray);
+    font-family: var(--subFont);
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 1064px;
+    height: auto;
+    margin: 10vw auto;
+}
+.container h1 {
+    font-family: var(--headline);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 25px 0 25px 0;
+    color: var(--vlightGray);
+}
+.container p {
+    padding-bottom: 25px ;
+    color: var(--vlightGray);
+}
+.column1, .column2, .column3 {
+    padding: 55px;
+    
+}
+.column1 {
+    background: var(--brightOrange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.column2 {
+    background: var(--darkCyan);
+}
+.column3 {
+    background: var(--vdarkCyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.button {
+    width: 130px;
+    background: var(--vlightGray);
+    text-align: center;
+    padding: 10px 0;
+    margin-right: 35px;
+    border-radius: 25px;
+    font-weight: 400;
+}
+.button:hover {
+    cursor: pointer;
+    border: 1px solid var(--vlightGray);
+    background: transparent;
+}
+.button:hover span {
+    color: var(--vlightGray);
+}
+.column1 span {
+    color: var(--brightOrange);
+}
+.column2 span {
+    color: var(--darkCyan);
+}
+.column3 span {
+    color: var(--vdarkCyan);
+}
+@media screen and (max-width: 780px) {
+   .container {
+       flex-direction: column;
+       margin: 10vw 5vw;
+   } 
+   .column1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+   }
+   .column3 {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+   }
+}
