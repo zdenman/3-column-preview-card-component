@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here](https://www.frontendmentor.io/solutions/stats-preview-card-component-pz2TJ6Ftg)
-- Live Site URL: [here](http://stats-preview-card-component-zdenman.vercel.app/)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/3column-preview-card-component-QHfE0WcyC)
+- Live Site URL: [here](https://3-column-preview-card-component-zdenman.vercel.app/)
 
 ## My process
 
